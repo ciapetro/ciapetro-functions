@@ -8,7 +8,8 @@
   },
   "keywords": ["ciapetro","funções","utils"],
   "repository": {
-    "url": "https://github.com/ciapetro/ciapetro-functions"
+    "url": "https://github.com/ciapetro/ciapetro-functions",
+    "type": "git"
   },
   "contributors": [
     { 
@@ -27,6 +28,6 @@
       "url" : "https://github.com/ycaruso"
     }
   ],
-  "author": "",
+  "author": "Sistema de informação - Ciapetro",
   "license": "ISC"
 }
