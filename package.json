@@ -1,0 +1,32 @@
+{
+  "name": "ciapetro-functions",
+  "version": "1.0.0",
+  "description": "Funções uteis que utilizamos na ciapetro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["ciapetro","funções","utils"],
+  "repository": {
+    "url": "https://github.com/ciapetro/ciapetro-functions"
+  },
+  "contributors": [
+    { 
+      "name" : "Diego Souza", 
+      "email" : "contato@diegoribeiro.dev", 
+      "url" : "https://github.com/diegouploads"
+    },
+    { 
+      "name" : "Tarcísio Mulatti de Carvalho",
+      "email" : "tarc.car@gmail.com",
+      "url" : "https://github.com/tarcCar"
+    },
+    { 
+      "name" : "Yuri Caruso T. Ferreira",
+      "email" : "ycaruso@gmail.com",
+      "url" : "https://github.com/ycaruso"
+    }
+  ],
+  "author": "",
+  "license": "ISC"
+}
