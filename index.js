@@ -536,7 +536,7 @@ define('funcoes',['require', 'exports', 'module'], function (require, exports, m
   
 
 const somenteNumeros = texto => {
-  return texto.replace(/[^0-9]/g, "").toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
+  return texto.replace(/\D/g, "");
 };
 const transformarEmFiltro = data => {
   const filtros = data.map(r => {
