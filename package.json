@@ -6,28 +6,35 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["ciapetro","funções","utils"],
+  "keywords": [
+    "ciapetro",
+    "funções",
+    "utils"
+  ],
   "repository": {
     "url": "https://github.com/ciapetro/ciapetro-functions",
     "type": "git"
   },
   "contributors": [
-    { 
-      "name" : "Diego Souza", 
-      "email" : "contato@diegoribeiro.dev", 
-      "url" : "https://github.com/diegouploads"
+    {
+      "name": "Diego Souza",
+      "email": "contato@diegoribeiro.dev",
+      "url": "https://github.com/diegouploads"
     },
-    { 
-      "name" : "Tarcísio Mulatti de Carvalho",
-      "email" : "tarc.car@gmail.com",
-      "url" : "https://github.com/tarcCar"
+    {
+      "name": "Tarcísio Mulatti de Carvalho",
+      "email": "tarc.car@gmail.com",
+      "url": "https://github.com/tarcCar"
     },
-    { 
-      "name" : "Yuri Caruso T. Ferreira",
-      "email" : "ycaruso@gmail.com",
-      "url" : "https://github.com/ycaruso"
+    {
+      "name": "Yuri Caruso T. Ferreira",
+      "email": "ycaruso@gmail.com",
+      "url": "https://github.com/ycaruso"
     }
   ],
   "author": "Sistema de informação - Ciapetro",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "urequire": "^0.7.0-beta.33"
+  }
 }
