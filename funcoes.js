@@ -181,6 +181,21 @@ const formatarData = data => {
     return data;
 };
 
+/**
+ * Formata CPF
+ * @param {*} cpf cpf que sera formatado
+ * @returns retorna cpf formatado para o usuário
+ */
+export const formatarCpf = cpf => {
+    cpf = cpf.replace(/\D/g, '');
+    cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+    cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+    cpf = cpf.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+    return cpf;
+};
+
+
+
 module.exports = {
     somenteNumeros,
     formatarNumero,
@@ -193,5 +208,6 @@ module.exports = {
     transformarEmFiltro,
     formatarTextoCamelCase,
     formatarTelefone,
-    formatarData
+    formatarData,
+    formatarCpf
 }
