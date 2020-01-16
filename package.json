@@ -1,6 +1,6 @@
 {
   "name": "ciapetro-functions",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Funções uteis que utilizamos na ciapetro",
   "main": "index.js",
   "scripts": {
@@ -16,10 +16,10 @@
     "type": "git"
   },
   "contributors": [
-    {
-      "name": "Diego Souza",
-      "email": "contato@diegoribeiro.dev",
-      "url": "https://github.com/diegouploads"
+    { 
+      "name" : "Diego Souza", 
+      "email" : "contato@diegoribeiro.dev", 
+      "url" : "https://github.com/dribeirodev"
     },
     {
       "name": "Tarcísio Mulatti de Carvalho",
