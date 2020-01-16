@@ -3,10 +3,7 @@
  * @param {string} texto string que vai ser extraidos os números
  */
 const somenteNumeros = texto => {
-    return texto
-        .replace(/[^0-9]/g, "")
-        .toString()
-        .replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
+    return texto.replace(/\D/g, '');
 };
 
 /**
