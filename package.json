@@ -1,10 +1,10 @@
 {
   "name": "ciapetro-functions",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Funções uteis que utilizamos na ciapetro",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "urequire combined ./src -o ./index"
   },
   "keywords": [
     "ciapetro",

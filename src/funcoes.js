@@ -209,5 +209,6 @@ module.exports = {
     formatarTextoCamelCase,
     formatarTelefone,
     formatarData,
-    formatarCpf
+    formatarCpf,
+    isBoolean
 }
