@@ -186,7 +186,7 @@ const formatarData = data => {
  * @param {*} cpf cpf que sera formatado
  * @returns retorna cpf formatado para o usuário
  */
-export const formatarCpf = cpf => {
+const formatarCpf = cpf => {
     cpf = cpf.replace(/\D/g, '');
     cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
     cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
