@@ -700,7 +700,7 @@ const groupByMultipleKeys = function (array, keys, groupFieldTransforms) {
     let groupKeyValues = {};
     const group = keys.map((key, index) => {
       groupKeyValues[key] = item[key];
-      if (groupFieldTransforms[index]) {
+      if (groupFieldTransforms && groupFieldTransforms[index]) {
         return String(groupFieldTransforms[index](item[key]));
       } else {
         return String(item[key]);
