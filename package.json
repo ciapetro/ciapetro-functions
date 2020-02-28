@@ -1,6 +1,6 @@
 {
   "name": "ciapetro-functions",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "Funções uteis que utilizamos na ciapetro",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

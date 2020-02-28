@@ -4,13 +4,13 @@
  * @returns string transformada
  */
 export default function formatarTextoCamelCase(texto: string) {
-  texto = texto.toLowerCase();
-  let palavras = texto.split(' ');
-  texto = '';
+  let textoLowerCase = texto.toLowerCase();
+  const palavras = textoLowerCase.split(' ');
+  textoLowerCase = '';
 
   palavras.forEach((palavra, i) => {
     palavra = palavra.charAt(0).toUpperCase() + palavra.slice(1);
-    i === palavras.length - 1 ? (texto += palavra) : (texto += palavra + ' ');
+    i === palavras.length - 1 ? (textoLowerCase += palavra) : (textoLowerCase += palavra + ' ');
   });
-  return texto;
+  return textoLowerCase;
 }

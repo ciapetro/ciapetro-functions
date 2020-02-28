@@ -4,7 +4,7 @@
 export default function setCookie(name: string, value: string, minutes: number) {
   let expires = '';
   if (minutes) {
-    let date = new Date();
+    const date = new Date();
     date.setTime(date.getTime() + minutes * 60 * 1000);
     expires = '; expires=' + date.toUTCString();
   }

@@ -18,9 +18,9 @@ export default function buscaBinaria(
   if (inicio > fim) return null;
 
   // encontra o index do meio
-  let mid = Math.floor((inicio + fim) / 2);
+  const mid = Math.floor((inicio + fim) / 2);
 
-  //compra o valor do campo do objeto do meio com o valor buscado
+  // compra o valor do campo do objeto do meio com o valor buscado
   if (arrayDaBusca[mid][campo] === valorBuscado) return { index: mid, value: arrayDaBusca[mid] };
 
   // se o valor for maior que valor buscado,

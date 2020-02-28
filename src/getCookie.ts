@@ -2,8 +2,8 @@
  * ler um cookie
  */
 export default function getCookie(name: string) {
-  let cookies = document.cookie;
-  let prefix = name + '=';
+  const cookies = document.cookie;
+  const prefix = name + '=';
   let begin = cookies.indexOf('; ' + prefix);
 
   if (begin === -1) {

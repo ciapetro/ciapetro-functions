@@ -4,9 +4,13 @@
  * @param keys array de campos que vao ser a chave do agrupamento
  * @param groupFieldTransforms Array com as funções que vai ser executada para transformar os campos que vai ser usado na chave do grupo
  */
-export default function groupByMultipleKeys(array: any[], keys: string[], groupFieldTransforms?: Function[]): any {
-  return array.reduce(function(storage, item) {
-    let groupKeyValues: any = {};
+export default function groupByMultipleKeys(
+  array: any[],
+  keys: string[],
+  groupFieldTransforms?: ((value: string) => string)[],
+): any {
+  return array.reduce((storage, item) => {
+    const groupKeyValues: any = {};
     const group = keys
       .map((key, index) => {
         groupKeyValues[key] = item[key];

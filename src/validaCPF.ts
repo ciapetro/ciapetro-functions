@@ -2,7 +2,7 @@ import { somenteNumeros } from '.';
 
 const cpfToArray = (cpf: any): number[] => {
   const cpfArray = cpf.map ? cpf.slice(0, 9) : cpf.substr(0, 9).split('');
-  return cpfArray.map((a: any) => parseInt(a));
+  return cpfArray.map((a: any) => parseInt(a, undefined));
 };
 
 const somaMultiplicacao = (total: number) => (result: number, num: number, i: number) => {
@@ -56,9 +56,9 @@ export default function validaCPF(cpf: string | null): boolean {
   ) {
     return false;
   } else {
-    let cpfArray = cpfToArray(cpfSoNumeros);
-    let primDigito = testDigit(mod11(getSomaMultiplicacao(cpfArray, 10)));
-    let segDigito = testDigit(mod11(getSomaMultiplicacao(cpfArray.concat(primDigito), 11)));
+    const cpfArray = cpfToArray(cpfSoNumeros);
+    const primDigito = testDigit(mod11(getSomaMultiplicacao(cpfArray, 10)));
+    const segDigito = testDigit(mod11(getSomaMultiplicacao(cpfArray.concat(primDigito), 11)));
 
     return digitosIguais(mergeDigits(primDigito, segDigito), getUltimos2Digitos(cpfSoNumeros));
   }
